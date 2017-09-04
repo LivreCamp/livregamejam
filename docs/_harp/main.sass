@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import 'styles/stars'
+@import 'styles/gradient'
+
+$purple-dark: #0f0327
+$purple-light: #3a0f88
+$purple: #17053d
+$yellow: #ffcc00
+
+
+h1
+  margin: 3em 0 2em 0
+
+@font-face
+    font-family: "Upheav"
+    src: url('fonts/upheavtt.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+body
+  font-family: "VT323", monospace
+  text-align: center
+  padding: 50px 20px 0
+  color: white
+  margin: 0
+  height: 2000px
+
+.background
+  @include gradient($purple-light, $purple, $purple-dark)
+
+.logo
+  margin: 6em 0 2.5em 0
+  img
+    width: 300px
+
+.content
+  width: 60%
+  margin: auto auto
+
+  .data
+    font-family: "Upheav", sans-serif
+    text-transform: uppercase
+    color: $yellow
+    font-size: 2.5em
+    letter-spacing: 0.1em
+
+  .local
+    letter-spacing: 0.15em
+    font-size: 1.3em
+    text-transform: uppercase
+    font-family: "Upheav"
+    color: $yellow
+    margin: 0.6em
+
+  h2
+    letter-spacing: -0.01em
+    line-height: 1.15em
+    padding-bottom: 1em
+    font-weight: 400
+
+.botoes
+  display: inline-flex
+
+.botao
+  min-width: 1.5em
+  width: 40%
+  max-width: 100%
+  padding: 15px
+
+  a
+    border: solid 1px white
+    display: block
+    text-align: center
+    margin: auto auto
+    padding: 1em 2em
+    font-size: 1.3em
+    letter-spacing: 0.05em
+    color: white
+    text-decoration: none
+    box-shadow: 6px 6px 0px white
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+    &:hover
+      border: solid 1px $purple
+      background-color: white
+      color: $purple
+      box-shadow: none
+      top: 2px
+      left: 2px
+      // padding-left: -3px;
+      // padding-top: -3px;
+
