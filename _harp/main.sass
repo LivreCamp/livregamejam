@@ -17,6 +17,82 @@ h1
     font-weight: normal
     font-style: normal
 
+.quadradinhos
+  display: -webkit-flex
+  padding-bottom: 5em
+
+  a
+    color: inherit
+    text-decoration: none
+    width: 33%
+    // min-height: 4em
+    height: 13em
+
+  .quadradinho
+    display: inline-block
+    border: 2px solid white
+    padding: 1em
+    width: 70%
+    margin: 1.2em
+    font-family: "Upheav", monospace
+    height: 100%
+    // min-height: 4em
+    box-shadow: 6px 6px 0px white
+    position: relative;
+
+    &:hover
+      color: $yellow
+      border: 2px solid $yellow
+      box-shadow: 6px 6px 0px $yellow
+
+    .titulo
+      padding: 1.6em 0.5em
+      font-size: 1.1em
+      display: block
+      height: 2em
+
+    .dia
+      font-size: 4em
+      display: block
+      margin: auto auto
+
+    .dsem
+      font-size: 1.1em
+      display: block
+      margin: auto auto
+
+    .cidade
+      font-size: 1.1em
+      display: block
+      padding: 0.4em
+
+
+.enderecos
+  padding-top: 1em
+  display: block
+
+  .endereco
+    display: inline-grid
+    width: 40%
+    font-family: "VT323", monospace
+    font-size: 1.1em
+
+    a
+      text-decoration: none
+      padding: 0.5em
+      color: white
+
+      &:hover
+        font-weight: bold
+
+
+    h3
+      font-size: 1.5em
+      color: white
+      font-weight: 600
+
+
+
 body
   font-family: "VT323", monospace
   text-align: center
@@ -36,6 +112,28 @@ body
 .content
   width: 60%
   margin: auto auto
+
+  .menu
+    font-size: 1.3em
+    font-family: "Upheav", sans-serif
+    display: table
+    margin: auto auto
+    // padding: 1em
+    // width: -moz-fit-content
+
+    a
+      display: inline-block
+      text-transform: uppercase
+      text-decoration: none
+      color: white
+      padding: 1em
+
+
+      &:hover
+        text-decoration: none
+        background: white
+        color: $purple
+
 
   .data
     font-family: "Upheav", sans-serif
@@ -73,6 +171,7 @@ body
 
 .botoes
   display: inline-flex
+  padding-bottom: 2em
 
 .botao
   min-width: 1.5em

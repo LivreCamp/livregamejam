@@ -7,11 +7,9 @@
 .content
 
   .data
-    | 20 à 22 de outubro
+    | 20, 21 e 22 de outubro
   .local
-     | Instituto de Computação, Unicamp
-     br
-     | INSTITUTO DE CIÊNCIAS MATEMÁTICAS E DE COMPUTAÇÃO (ICMC), USP (SÃO CARLOS)
+     | São Carlos & Campinas
 
 
   .botoes
@@ -20,7 +18,16 @@
     .botao
       a(href="https://t.me/livrecamp" target="_blank") TELEGRAM
 
-  h1 O que é?
+
+
+  .menu
+        a(href="#OQUEE") O que é
+        a(href="#REGRAS") Regras
+        a(href="#AGENDA") Workshops
+        a(href="#LOCAIS") Locais
+        a(href="#ORGANIZACAO") Organização
+
+  h1#OQUEE O que é?
   h2
     p
       | O FoG e o Gamux, em parceria com a LivreCamp e o sancaLUG, traz para
@@ -38,7 +45,39 @@
       | informações como datas e locais, fique ligado neste site e em
       | nossa página do Facebook!
 
-  h1
+  h1#AGENDA Workshops
+
+  .quadradinhos
+        a(target="_blank" href="https://www.facebook.com/events/1464819813553975")
+          .quadradinho
+                .dia 6/10
+                .dsem sexta
+                .titulo Workshop de Phaser
+                .cidade Campinas
+
+        a(target="_blank" href="http://www.google.com")
+          .quadradinho
+                .dia 10/10
+                .dsem terça
+                .titulo Worshop de Krita
+                .cidade São Carlos
+
+        a(target="_blank" href="http://www.google.com")
+          .quadradinho
+                .dia 16/10
+                .dsem segunda
+                .titulo Worshop de Godot
+                .cidade São Carlos
+
+  .quadradinhos
+        a(target="_blank" href="http://www.google.com")
+          .quadradinho
+                .dia 17/10
+                .dsem terça
+                .titulo Worshop de Love
+                .cidade São Carlos
+
+  h1#REGRAS
     | Regras e Informações
 
   h2
@@ -74,16 +113,35 @@
       | jogável e, mesmo que feinho,
       span faça você se orgulhar! ❤
 
-  h1
+  h1#LOCAIS
     | Locais Participantes
-  h2
-    | Instituto de Computação, IC-3.5, Unicamp, SP.
-    br
-    | Instituto de Ciências Matemáticas e de Computação, ICMC, USP, São Carlos, SP.
 
   img(style="width: 80%;" src="images/map.png")
 
-  h1
+  .enderecos
+    .endereco
+      h3 Campinas
+
+      | Instituto de Computação, IC-3.5, Unicamp
+      br
+      | Avenida Albert Einstein, 1251
+      br
+      | Cidade Universitária, Campinas, SP
+
+      a(target="_blank" href="http://osm.org/go/M~3A0XFvj?m=&way=95011169") [ Mapa ]
+
+    .endereco
+      h3 São Carlos
+
+      | Instituto de Ciências Matemáticas e de Computação, USP
+      br
+      | Avenida Trabalhador Sancarlense, 400
+      br
+      | Centro, São Carlos, SP
+
+      a(target="_blank" href="http://osm.org/go/NqLvBbvxS--?m=&relation=297986") [ Mapa ]
+
+  h1#ORGANIZACAO
     | Organização
   .entidades
     .livrecamp
