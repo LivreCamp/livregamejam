@@ -109,9 +109,34 @@ body
   img
     width: 300px
 
+
 .content
   width: 60%
   margin: auto auto
+
+  .inscricao
+    font-family: "Upheav", monospace
+    color: $yellow
+    font-size: 1.3em
+    padding-bottom: 2em
+
+    p
+      span
+        background: none
+        padding: 0 0.5em
+
+        a
+          color: $yellow
+          text-decoration: none
+          // border-bottom: 1px solid $yellow
+          text-shadow: 3px 3px $purple-dark
+
+          &:hover
+            color: $yellow
+            text-shadow: 3px 3px $purple-light
+            border-bottom: 1px dotted $yellow
+
+
 
   .menu
     font-size: 1.3em
@@ -178,7 +203,7 @@ body
   width: 40%
   max-width: 100%
   padding: 15px
-  margin: 2em 0 2em 0
+  margin: 2em 0 1em 0
 
   a
     border: solid 1px white
@@ -191,19 +216,12 @@ body
     color: white
     text-decoration: none
     box-shadow: 6px 6px 0px white
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
     position: relative;
 
     &:hover
-      border: solid 1px $purple
-      background-color: white
-      color: $purple
-      box-shadow: none
-      top: 2px
-      left: 2px
+      border: solid 1px $yellow
+      box-shadow: 6px 6px 0px $yellow
+      color: $yellow
       // padding-left: -3px;
       // padding-top: -3px;
 
@@ -215,20 +233,36 @@ body
     opacity: 1
     &:hover
       opacity: 0.7
-  .gamux
+
+  .base
     display: block
     margin: auto auto
     img
       width: 150px
+
+  .gamux
+    @extend .base
+
   .livrecamp
-    display: block
+    @extend .base
     img
       width: 100px
+
   .sancalug
-    display: block
-    margin: auto auto
+    @extend .base
+
+  .ic
+    @extend .base
     img
-      width: 150px
+      width: 100px
+
+  .unicamp
+    @extend .base
+    img
+      width: 100px
+
+  .icmc
+    @extend .base
 
 .rodape
   img
